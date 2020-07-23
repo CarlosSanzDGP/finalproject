@@ -10,10 +10,5 @@ De esta manera el programa podría decir si el modelo y color corresponde con su
 
 
 
-Opción 2. Ideología política
-
-Proyecto de Vicente Castillo. https://github.com/vicenteccastillo/trabajo_fin_bootcamp
-Utilizar el barómetro del CIS para identificar cuales de sus pregutnas son las que más influencia tienen a la hora de decantar a la personas por uno u otro partido politico. 
-Una vez filtradas esta preguntas solo hay que crear una encuesta con ellas y de esa manera tener de una manera mucho más rápida y fiable su orientación política.
 
 
