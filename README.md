@@ -18,7 +18,11 @@ Vehicle Color Recognition on an Urban Road by Feature Context. Pan chen, Xiang b
 
 4.- Resize y normalizar las fotos. La idea es crear una funcion que convierta cada una de las fotos en una fotos de 64 x 64 para poder trabajar con ella.
 
-5.- Creamos 
+5.- de rgba a rgb
+
+6.- diccionario de arrays con valores black, white, red, green
+
+get dummies (texto de felipe slack)
 
 5.- Arquitectura neuronal
 
