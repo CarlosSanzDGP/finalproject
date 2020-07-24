@@ -16,7 +16,9 @@ Vehicle Color Recognition on an Urban Road by Feature Context. Pan chen, Xiang b
 
 3.- Limpiamos los colores de elegidos de algunos valores que considero erróneos, como coches dorados en carpeta de blancos y similares.
 
-4.- Resize y normalizar las fotos.
+4.- Resize y normalizar las fotos. La idea es crear una funcion que convierta cada una de las fotos en una fotos de 64 x 64 para poder trabajar con ella.
+
+5.- Creamos 
 
 5.- Arquitectura neuronal
 
