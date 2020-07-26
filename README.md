@@ -15,16 +15,19 @@ Vehicle Color Recognition on an Urban Road by Feature Context. Pan chen, Xiang b
 2.-Tras elegir el dataset decidimos utilizar 4 de los 8 colores que ofrecen por distintas razones, en un caso por la poca cantidad de variables de cada clase (fotos de coches con ese color) y en otros porque el color que presentan no es homogéneo, con lo que puede ser demasiado fácil errar. 
 
 3.- Limpiamos los colores de elegidos de algunos valores que considero erróneos, como coches dorados en carpeta de blancos y similares.
+	- El tipo de archivos que tenemos en el data set es completo de jpg. Nos aseguramos que no hay otro tipo de archivo como png.
 
 4.- Resize y normalizar las fotos. La idea es crear una funcion que convierta cada una de las fotos en una fotos de 64 x 64 para poder trabajar con ella.
+	- Utilizaremos la funcion resize para homogeneizarlas. En primer lugar consideramos la idea de guardarlas en una nueva carpeta todas ya homogeneizadas y trabajar con ellas desde ahí, sin embargo 
+	parece que puede ser mas útil pasar dirctamente por una funcion que las convierta en y las lleva a ser numpy array
 
-5.- de rgba a rgb
+5.- de rgba a rgb. La a es la claridad y añade una capa mas por lo que si la tuveramos deberíamos deshacernos de ella dentro de la funcion anterior. 
 
 6.- diccionario de arrays con valores black, white, red, green
 
 get dummies (texto de felipe slack)
 
-5.- Arquitectura neuronal
+5.- Arquitectura neuronal video de antonio
 
 
 
