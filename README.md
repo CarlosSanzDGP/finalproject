@@ -1,9 +1,9 @@
 # finalproject
 
 Objetivo; Entrenar un modelo capaz de deducri el color de un coche. 
-Objetivo2: Enseñar al programa una foto de un coche y que sea capaz de decir que modelo es. 
 
-El objetivo 1 es parte de un proyecto más complejo que debería ser capaz de cotejar el modelo de un coche con su matrícula en una foto tomada por un radar de velocidad o un parking público. 
+
+El objetivo es parte de un proyecto más complejo que debería ser capaz de cotejar el modelo de un coche con su matrícula en una foto tomada por un radar de velocidad o un parking público. 
 De esta manera el programa podría decir si el modelo y color corresponde con su matrícula, avisando en su caso de que la matrícula es falsa o robada.
 
 1.- El primer problema, como casi siempre, es conseguir un dataset que se ajuste lo máximo posible al proyecto que queremos realizar. En este caso habíamos elegido el famoso dataset 196 de coches de stanford, competición que sigue en curso, pero sus datos, a pesar de lo tremendamente extensos, no contenían la variable color que es la primera con la que queremos trabajar. 
@@ -25,9 +25,13 @@ Vehicle Color Recognition on an Urban Road by Feature Context. Pan chen, Xiang b
 
 6.- diccionario de arrays con valores black, white, red, green
 
-get dummies (texto de felipe slack)
+7.- Probamos con get dummies pero sus valores no son utiles para poder establecer los colores con posterioridad
 
-5.- Arquitectura neuronal video de antonio
+8.- Hacemos onehotencoder de sklearn.preprocessing que nos permite trabajar con una "y" en forma de array de 4 valores de 0 y 1, segun el color.
+
+9.- Utilizamos el primer esquema de arquitectura neuronal y obtenemos resultados de un accuracy del 98%.
+
+10.- Orden y limpieza del proceso hasta ahora con la rama "limpieza": eliminar los jupyter de pruebas, establecer las funciones en src y guardar en basura lo que no vayamos a utilizar. 
 
 
 
