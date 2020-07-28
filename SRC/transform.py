@@ -11,8 +11,9 @@ from matplotlib import pyplot as plt
 
 
 def resize_image(imagen,size,output=False):
-    im = Image.open(imagen)
-    rgb_image = RGBA_a_RGB(im)
+    #cambio "im por im_rgb" para saltar la funcion de rgba
+    rgb_image = Image.open(imagen)
+    #rgb_image = RGBA_a_RGB(im)
     im_rgb = rgb_image.resize(size)
     
     if not output:
@@ -25,7 +26,7 @@ def resize_image(imagen,size,output=False):
         print("file already exists, continuing to next one") 
         return im_rgb
 
-
+'''
 def RGBA_a_RGB(image1):
     if image1.mode == "RGBA":
         background = Image.new("RGB", image1.size, (255, 255, 255))
@@ -34,7 +35,7 @@ def RGBA_a_RGB(image1):
         rgb_image = Image.open(f"{image1}")
         return rgb_image
     return image1
-
+'''
 
 
 def image_to_array(image):
