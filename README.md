@@ -3,7 +3,7 @@
 Objetivo: Entrenar un modelo capaz de deducir el color de un coche. 
 
 
-![alt text](INPUT/portada.jpg)
+![alt text](INPUT/portada2.jpeg)
 
 
 El objetivo es parte de un proyecto más complejo que debería ser capaz de cotejar el modelo de un coche con su matrícula en una foto tomada por un radar de velocidad o un parking público. 
