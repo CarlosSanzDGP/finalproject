@@ -1,10 +1,13 @@
 # finalproject
 
-Objetivo; Entrenar un modelo capaz de deducri el color de un coche. 
+Objetivo: Entrenar un modelo capaz de deducir el color de un coche. 
+
+
+![alt text](INPUT/portada.jpg)
 
 
 El objetivo es parte de un proyecto más complejo que debería ser capaz de cotejar el modelo de un coche con su matrícula en una foto tomada por un radar de velocidad o un parking público. 
-De esta manera el programa podría decir si el modelo y color corresponde con su matrícula, avisando en su caso de que la matrícula es falsa o robada.
+De esta manera el programa podría decir si el modelo y color corresponde con su matrícula, avisando de que la matrícula es falsa.
 
 1.- El primer problema, como casi siempre, es conseguir un dataset que se ajuste lo máximo posible al proyecto que queremos realizar. En este caso habíamos elegido el famoso dataset 196 de coches de stanford, competición que sigue en curso, pero sus datos, a pesar de lo tremendamente extensos, no contenían la variable color que es la primera con la que queremos trabajar. 
 Dataset https://ai.stanford.edu/~jkrause/cars/car_dataset.html?fbclid=IwAR2XibtbHU_dES8CXk5llA-CpwRm18Ntji1n72gcmLVkJLtZyk0zlTVYT_I
@@ -21,7 +24,7 @@ Vehicle Color Recognition on an Urban Road by Feature Context. Pan chen, Xiang b
 	- Utilizaremos la funcion resize para homogeneizarlas. En primer lugar consideramos la idea de guardarlas en una nueva carpeta todas ya homogeneizadas y trabajar con ellas desde ahí, sin embargo 
 	parece que puede ser mas útil pasar dirctamente por una funcion que las convierta en y las lleva a ser numpy array
 
-5.- de rgba a rgb. La a es la claridad y añade una capa mas por lo que si la tuveramos deberíamos deshacernos de ella dentro de la funcion anterior. 
+5.- de rgba a rgb. La a es la claridad y añade una capa mas por lo que si la tuviéramos y deberiéramos deshacernos de ella dentro de la funcion anterior. (Eliminado posteriormente)
 
 6.- diccionario de arrays con valores black, white, red, green
 
@@ -33,8 +36,18 @@ Vehicle Color Recognition on an Urban Road by Feature Context. Pan chen, Xiang b
 
 10.- Orden y limpieza del proceso hasta ahora con la rama "limpieza": eliminar los jupyter de pruebas, establecer las funciones en src y guardar en basura lo que no vayamos a utilizar. 
 
+11.- Guardamos el modelo ya entrenado para trabajar con el.
+
+12.- Realizamos una función que reciba el path de una foto y nos devuelva la el color y la probabilidad.
+
+13.- Lo vinculamos a otra función que reciba esa tupla de datos (color y prob) y devuelva la respuesta en texto y con un diccionario random para cada color.
+
+14.- Realizamos las pruebas para ver como funciona con fotos externas al data set, tanto parecidas al mismo como muy distintas, obteniendo datos muy diferentes.
+
+15.- Tensorboard y Heroku para terminar el proyecto. 
 
 
 
+![alt text](INPUT/portada.jpg)
 
 
